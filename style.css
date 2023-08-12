@@ -38,7 +38,7 @@ a{
 
 }
 
-#Dash-icon{
+#dash-icon-div{
     position: relative;
     right: 20px;
     top: 10px;
@@ -49,7 +49,7 @@ a{
     font-weight: 800;
 }
 
-#dashIcon{
+#dash-icon{
     height: 60px;
     width: fit-content;
 }
@@ -116,7 +116,7 @@ a{
 
 }
 
-.alert-buttons{
+.bell-buttons{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -142,11 +142,6 @@ a{
     padding:0;
  
 }
-
-#user-icon-bottom{
-    
-}
-
 
 
 .user{
@@ -179,7 +174,7 @@ a{
 
 } 
 
-#greeting-icon-div{
+#banner-bottom-left-parent{
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 30% 70%;
