@@ -71,6 +71,7 @@ a{
     box-shadow: 0px 2px 3px 1px rgb(161, 161, 161);
     position: relative;
     max-height: 100%;
+    max-width: 100%;
     display: grid;
 }
 .banner-top{
@@ -178,27 +179,32 @@ a{
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 30% 70%;
-    margin-top: 30%;
-    vertical-align: bottom;
+/*     margin-top: 30%;
+ */   
 
 }
 
 #greeting-div{
     display: flex;
-    
-     margin:0px 0 0 40px;
+    flex-direction: column;
+     margin: 50px 0 0 40px;
      font-size: x-large;
-     min-width: auto;   
+     min-width: auto; 
+     height: fit-content;  
     
     }
 
 #greeting{
-    margin:0 0 8px 0;
+    margin: 0px 0 10px 0;
+    font-size: x-large;
+    font-weight: 600;
+
 }
 
 #user-name{
     font-size: xx-large;
     margin: 0 0 0 0;
+    font-weight: 600;
 }
 
 #photo1{
@@ -278,7 +284,7 @@ a{
     display:grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
-    max-height: ;
+    height: 100%;
 }
 
 .cards{
