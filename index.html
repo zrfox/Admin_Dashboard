@@ -12,6 +12,9 @@
     <div class="grid-container-page">
         <div class="left-page">
             <div class="sidebar">
+               <div id="Dash-icon"><img src="/imgs/dashIcon.png" id = "dashIcon"> <span id="dashboard-text">Dashboard</span> 
+                </div> 
+                <br>
                 <a href="Home">Home</a>
                 <a href="Profile">Profile</a>
                 <a href="Messages">Messages</a>
@@ -27,18 +30,30 @@
         <div class="right-page">
             <div class="banner-container">
             <div class="banner-top">
-                <button id="magnify-icon"><i class="fa-solid fa-magnifying-glass"></i></button> 
-                <input type="text"  class="search-bar">
-            <div class="alert-buttons">
+                
+                <div id="search-elements">
+                    <button id="magnify-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text"  class="search-bar">
+                </div>
+            
+                <div class="alert-buttons">
                 <button id="bell-icon"><i class="fa-solid fa-bell"></i></button>
                 <button id="user-icon"><img id="photo2" src="/imgs/dogEdit.png" alt=""></button>
                 <span class="user">John Doe</span>
-            </div>
+                </div>
                 
             </div>
             <div class="banner-bottom">
-                <div id="user-icon-bottom"><img id="photo1" src="/imgs/dogEdit.png" alt=""></div>
-                <div id="greeting-div"><p id="greeting">Hi there, </p><p id="user-name">John Doe (@john)</p></div>
+
+                <div id="greeting-icon-div">
+                    
+                    <div id="user-icon-bottom"><img id="photo1" src="/imgs/dogEdit.png" alt="">
+                    </div>
+                    <div id="greeting-div"><p id="greeting">Hi there, </p><p id="user-name">John Doe (@john)</p>
+                    </div>
+                </div>
+
+
             <div class="banner-buttons">
                 <button id="new-button">New</button>
                 <button id="upload-button">Upload</button>
@@ -48,12 +63,124 @@
             </div>
             <div class="content-container">
                 <div class="cards">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card">
+<!--                         <div class="CardBackground"></div>
+ -->                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Super Cool Project!
+                                </div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Less Cool Project
+                                </div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Impossible App!</div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Easy Peasy App</div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Ad Blocker</div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="CardContainer">
+                            <div class="CardContent">
+                                <div class="project-name">Money Maker</div>
+                                <p>Etiam sed risus sit amet orci lobortis scelerisque quis sit amet lacus. Morbi suscipit ex cursus, fringilla neque vel, viverra enim. Phasellus in vestibulum libero, quis eleifend nunc. Integer porttitor blandit nibh, at porttitor sem tempor et. </p>
+                            </div>
+                            <div class="CardOptions" id="card-button">
+                                <button>
+                                    <i class="fa-regular fa-star" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-regular fa-eye" id="card-button"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-network-wired" id="card-button"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="announcements-section"></div>
             </div>

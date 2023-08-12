@@ -21,13 +21,40 @@ body{
     width:100%;
 }
 
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.918);
+    font-weight: 800;
+}
+
 .sidebar{
     display:grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(9,1fr);
+    grid-template-rows: repeat(12,1fr);
     height:60%;
     text-align: start;
     margin:0 0px 0px 40px;
+    font-size: xx-large;
+
+}
+
+#Dash-icon{
+    position: relative;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.918);
+    font-weight: 800;
+}
+
+#dashIcon{
+    height: 60px;
+    width: fit-content;
+}
+
+#dashboard-text{
     font-size: xx-large;
 }
 
@@ -35,7 +62,7 @@ body{
     background-color:rgb(211, 209, 209);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 23% 77%;
     background-color: red;
 }
 
@@ -43,15 +70,23 @@ body{
     background-color: rgb(252, 252, 252);
     box-shadow: 0px 2px 3px 1px rgb(161, 161, 161);
     position: relative;
+    max-height: 100%;
+    display: grid;
 }
 .banner-top{
     display:grid;
-    grid-template-columns: 3% 60% 35%;
-    grid-template-rows: ;
-    margin: 15px 30px 15px 30px;
-    height:20%;
+    grid-template-columns: 70% 30%;
+/*     margin: 15px 30px 15px 30px;
+ *//*     height:20%;
+ */ 
     padding:0;
-    gap: 2%;
+    max-height: 100%;
+
+}
+
+#search-elements{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
 }
 
 #magnify-icon{
@@ -60,7 +95,6 @@ body{
     border:none;
     background: none;
     font-size: xx-large;
-    width: fit-content;
 }
 
 #magnify-icon :hover{
@@ -70,11 +104,16 @@ body{
 
 .search-bar{
     margin: 0 0px 0 5px;
+    border: none;
     border-radius: 120px;
     max-height: 4rem;
     height: 3rem;
     align-self: center;
     font-size: xx-large;
+    background-color: rgb(214, 218, 231);
+    box-sizing: border-box;
+    
+
 }
 
 .alert-buttons{
@@ -108,20 +147,7 @@ body{
     
 }
 
-#photo1{
-    max-width:120%;
-    max-height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 50%;
-    
-}
 
-#photo2{
-    max-width:55%;
-    max-height: auto;
-    border-radius: 50%;
-}
 
 .user{
 /*     margin: 8px 0 0 150px;
@@ -131,33 +157,45 @@ body{
 }
 
 .banner-bottom{
-    display: flex;
-/*     grid-template-columns: 35px 300px 50px 50px 50px;
- */    
+    display: grid;
+
+     grid-template-columns: 30% 70%;
+     grid-template-rows: 1;
+     
 /*     grid-template-columns: 1fr 1fr 1fr 1fr;
- */    min-height:60%;
-    margin: 15px 30px 5px 30px;
-    padding: 0;
-    align-items: flex-end;
+/*     margin: 15px 30px 5px 30px;
+ */    padding: 0;
     justify-items: end;
     column-gap: 0%;
+/*     height: 88%;
+ */
+    max-height: 100%;
 }
 
 #user-icon-bottom{
-    margin:50px 10px 0 20px;
-    flex:3;
-    max-width: 6%;
-    min-width: 6%;
-    height: auto;
+    height: fit-content;
+    width: auto;
+    text-align: end;
+
+} 
+
+#greeting-icon-div{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 30% 70%;
+    margin-top: 30%;
+    vertical-align: bottom;
 
 }
 
 #greeting-div{
-    margin:40px 0 0 40px;
-    font-size: x-large;
-    flex:2;
-    min-width: auto;    
-}
+    display: flex;
+    
+     margin:0px 0 0 40px;
+     font-size: x-large;
+     min-width: auto;   
+    
+    }
 
 #greeting{
     margin:0 0 8px 0;
@@ -168,9 +206,23 @@ body{
     margin: 0 0 0 0;
 }
 
+#photo1{
+    
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+#photo2{
+    max-width:55%;
+    max-height: auto;
+    border-radius: 50%;
+}
+
 .banner-buttons{
    display: flex;
-    margin: 0 3% 0 0;
+    margin: 0 3% 1% 0;
     flex: 1;
     justify-content: end;
     align-items: flex-end;
@@ -198,8 +250,8 @@ body{
 
 #upload-button{
 /*     margin: 23px 0 0 620px;
- */  min-height: 60px;
- min-width: 150px;
+ */ min-height: 60px;
+    min-width: 150px;
     border-radius: 30px;
     background: rgb(0, 89, 255);
     border: none;
@@ -214,7 +266,7 @@ body{
 #share-button{
 /*     margin: 23px 0 0 690px;
  */  min-height: 60px;
- min-width: 150px;
+    min-width: 150px;
     border-radius: 30px;
     background: rgb(0, 89, 255);
     border: none;
@@ -227,7 +279,7 @@ body{
 }
 
 .content-container{
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(224, 224, 224);
     display:grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
@@ -240,16 +292,70 @@ body{
 /*     grid-template-columns: 1fr 1fr;
  */    gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: 400px;
    /*  max-width: 100px;
     max-height: 100px; */
 
 }
 
 .card{
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
+    border-left: solid rgb(0, 206, 221) 10px;
     margin:30px 0px 0px 30px;
     max-width: 400px;
+    max-height: 400px;
+    border-radius: 8px;
+    
 }
+
+.CardBackground{
+    background-color: aqua;
+        background-color: rgb(255, 255, 255);
+
+}
+
+.CardContainer{
+    display:grid;
+    grid-template-rows: 4fr 1fr;
+    height:100%;
+}
+
+.CardContent{
+    padding: 10px;
+    margin: 10px;
+    height: ;
+}
+
+p{
+    font-size: larger;
+   
+    
+}
+
+.project-name{
+    font-size: x-large;
+    font-weight: 600;
+
+}
+
+.CardOptions{
+    text-align: end;
+    margin:20px;
+}
+
+    
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+#card-button{
+    font-size: xx-large;
+
+}
+
 .announcements-section{
     background-color: bisque;
     margin:30px 30px 30px 30px;
