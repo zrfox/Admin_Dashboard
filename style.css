@@ -5,12 +5,13 @@
 body{
     margin:0;
     padding:0;
+    min-height: 100vh;
 }
 .grid-container-page{
     display:grid;
     grid-template-columns:0.5fr 4fr;
     grid-template-rows: auto;
-    height:100vh;
+    min-height:100vh;
     width:100%;
     padding:0;
     margin:0;
@@ -293,11 +294,12 @@ a{
 /*     grid-template-columns: 1fr 1fr;
  */    gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    grid-template-rows: 400px;
-   /*  max-width: 100px;
+/*     grid-template-rows: 400px;
+ */   /*  max-width: 100px;
     max-height: 100px; */
-
-}
+    grid-template-rows: auto 1fr 1fr ;
+/*     overflow: hidden;
+ */}
 
 .card{
     background-color: rgb(255, 255, 255);
@@ -319,6 +321,15 @@ a{
     display:grid;
     grid-template-rows: 4fr 1fr;
     height:100%;
+}
+
+#your-projects-header{
+/*     margin-bottom: 200px;
+ */
+    width: 100%;
+    grid-column: 1/-1;
+    margin-left: 30px;
+    margin-bottom: 0;
 }
 
 .CardContent{
@@ -358,9 +369,35 @@ button{
 }
 
 .announcements-section{
-    background-color: bisque;
     margin:30px 30px 30px 30px;
-    display:flex;
-    flex:1;
     min-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4% 46% 4% 46%;
+    gap: 0%;
+
+}
+
+#announcements-header{
+    margin: 0;
+    grid-row: ;
+}
+
+#trending-header{
+    margin: 0;
+}
+
+.announcements-top{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    /*     height: 40%;
+ */
+    margin: 4px 0 10px;
+}
+
+.announcements-bottom{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 4px 0 10px;
+
 }
