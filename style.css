@@ -298,8 +298,8 @@ a{
  */   /*  max-width: 100px;
     max-height: 100px; */
     grid-template-rows: auto 1fr 1fr ;
-/*     overflow: hidden;
- */}
+/*     overflow: hidden; 
+ */}   
 
 .card{
     background-color: rgb(255, 255, 255);
@@ -374,7 +374,8 @@ button{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4% 46% 4% 46%;
-    gap: 0%;
+    gap: 0;
+
 
 }
 
@@ -392,12 +393,40 @@ button{
     border-radius: 8px;
     /*     height: 40%;
  */
+    height:fit-content;
     margin: 4px 0 10px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    
 }
 
 .announcements-bottom{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     margin: 4px 0 10px;
+    display: flex;
+    
+}
 
+.announcement{
+    margin: 5% 6% 5% 6%;
+}
+
+.announcement-title{
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.announcement-content{
+    color: rgb(46, 46, 46);
+    margin-top: 5px;
+}
+
+.gray-line{
+    align-self: center;
+    background-color: rgb(219, 219, 219);
+    height: 2px;
+    width: 400px;
+    
 }
