@@ -423,7 +423,7 @@ button{
     margin: 4px 0 10px;
     display: flex;
     grid-row: 5;
-
+    gap: 13px;
     display: grid;
     grid-template-rows: 1r 1fr 1fr 1fr;
 
@@ -462,11 +462,12 @@ button{
 }
 
 .trending-user{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
     display: flex;
     align-items: center;
     font-size: x-large;
+
+    cursor: pointer;
+  
 }
 
 .trending-user img{
@@ -482,5 +483,9 @@ button{
     border-radius: 50%;
 
     margin-right: 20px;
+}
+
+#font-color-span{
+    color: rgb(46, 46, 46);
 
 }
