@@ -237,6 +237,7 @@ a{
     flex: 1;
     justify-content: end;
     align-items: flex-end;
+    
     padding: 0 10% 0 0%;
     
     width:150px;
@@ -254,8 +255,9 @@ a{
     color: white;
     font-size: x-large;
     font-weight: bold;
-    margin-right: 2%;
-    margin-left: 2%;
+  /*   margin-right: 2%;
+    margin-left: 2%; */
+    margin-right: 30px;
 
 }
 
@@ -269,8 +271,9 @@ a{
     color: white;
     font-size: x-large;
     font-weight: bold;
-    margin-right: 2%;
-    margin-left: 2%;
+   /*  margin-right: 2%;
+    margin-left: 2%; */
+    margin-right: 30px;
 
 }
 
@@ -284,8 +287,9 @@ a{
     color: white;
     font-size: x-large;
     font-weight: bold;
-    margin-right: 2%;
-    margin-left: 2%;
+   /*  margin-right: 2%;
+    margin-left: 2%; */
+    margin-right: 30px;
 
 }
 
