@@ -5,13 +5,13 @@
 body{
     margin:0;
     padding:0;
-    min-height: 100vh;
+    min-height: 100%;
 }
 .grid-container-page{
     display:grid;
     grid-template-columns:0.5fr 4fr;
-    grid-template-rows: auto;
-    min-height:100vh;
+    grid-template-rows: 1fr;
+    min-height:100%;
     width:100%;
     padding:0;
     margin:0;
@@ -20,6 +20,7 @@ body{
 .left-page{
     background-color:rgb(79, 159, 250);
     width:100%;
+    min-height: 100%;
 }
 
 a{
@@ -30,9 +31,9 @@ a{
 
 .sidebar{
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(12,1fr);
-    height:60%;
+    min-height:100%;
     text-align: start;
     margin:0 0px 0px 40px;
     font-size: xx-large;
@@ -63,8 +64,10 @@ a{
     background-color:rgb(211, 209, 209);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 23% 77%;
+    grid-template-rows: /* 23% 77%; */ 1fr 4fr;
     background-color: red;
+    min-height: 100%;
+
 }
 
 .banner-container{
@@ -122,6 +125,7 @@ a{
     display:flex;
     align-items: center;
     justify-content: center;
+    min-height: 100%;
 }
 
 #bell-icon{
@@ -139,8 +143,12 @@ a{
     display:;
     border:none;
     background: none;
-    max-width: 20%;
-    max-height: 100px;
+  /*   max-width: 20%; */     /* causing white space bottom page issues */
+    
+  min-width: 180px;
+  max-width: 180px;
+
+  max-height: auto;
     padding:0;
  
 }
@@ -209,7 +217,8 @@ a{
 }
 
 #photo1{
-    
+    min-width: 80%;
+
     max-width: 80%;
     height: auto;
     border-radius: 50%;
@@ -285,7 +294,10 @@ a{
     display:grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
-    height: 100%;
+    min-height: 100%; /*covers bottom white space when 100vh
+    minheight: 100%; <- doesn't cover bottom white space*/
+    
+    min-height: 100%;
 }
 
 .cards{
@@ -299,6 +311,10 @@ a{
     max-height: 100px; */
     grid-template-rows: auto 1fr 1fr ;
 /*     overflow: hidden; 
+ */
+
+    max-height: 10%;
+/*     max-height: 100vh;  this made the white space EVEN WORSE. why? Am I giving visual height to only a portion of the page so that more space is being created?
  */}   
 
 .card{
@@ -373,7 +389,7 @@ button{
     min-width: 500px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4% 46% 4% 46%;
+    grid-template-rows: 4% 40% 12% 4% 40%;
     gap: 0;
 
 
@@ -386,6 +402,7 @@ button{
 
 #trending-header{
     margin: 0;
+    grid-row: 4;
 }
 
 .announcements-top{
@@ -398,7 +415,6 @@ button{
     display: flex;
     flex-direction: column;
     grid-row: 2;
-    
 }
 
 .announcements-bottom{
@@ -406,7 +422,12 @@ button{
     border-radius: 8px;
     margin: 4px 0 10px;
     display: flex;
-    
+    grid-row: 5;
+
+}
+
+.announcements-section{
+    max-height: 100%;
 }
 
 .announcement{
@@ -429,4 +450,8 @@ button{
     height: 2px;
     width: 400px;
     
+}
+
+.gap{
+    margin: 230px;
 }
